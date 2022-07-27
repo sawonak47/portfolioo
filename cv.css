@@ -1,0 +1,196 @@
+h1{
+
+    color:rgb(255, 183, 0);
+    
+    text-align: center;
+    width:500px;
+    font-family: 'Roboto', sans-serif;
+    align-content: center;
+   
+   
+    
+}
+h1:hover{
+    background-color:black;
+    color: tomato;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: all 1s ease;
+
+
+}
+.align{
+
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(0, 0, 0);
+    width: 200px; 
+    margin-right: auto;
+}
+.justify{
+    text-align: justify;
+}
+
+}
+
+*{
+    margin: 0 auto;
+    
+    font-family: 'Patrick Hand', cursive;
+    
+    
+}
+a:hover{
+    color: tomato;
+    bottom: 1px;
+}
+h2:hover{
+
+    background-color:black;
+    color: tomato;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: all 1s ease;
+}
+input:focus{
+
+    background-color: tomato);
+   
+
+
+}
+input{
+    color: aliceblue;
+}
+p:hover{
+
+    text-shadow: 1px 2px tomato ;
+}
+p::first-letter{
+    color: black;
+    font-size: 1.3em;
+}
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    
+    background-size: cover;
+    
+    background-size: 1024px atuo;
+    
+}
+#summary {
+
+}
+#employment{
+    
+}
+#message:focus{background-color: tomato;
+
+
+}
+#nav{
+    width: 500px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 10px;
+   
+   
+    
+
+
+}
+
+#nav ul{
+    align-items: center;
+   
+    
+}
+#nav ul li{
+    list-style-type: none;
+    margin: 20px;
+    float: left;
+    
+}
+#nav ul li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: yellow;
+    cursor: alias;    
+}
+#nav ul li a:hover{
+    text-decoration: underline;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: all 1s ease;
+
+}
+
+  
+
+.card{
+    margin: 10px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px  black;
+    border-radius: 15px;
+    background-color: tomato;
+    align-content: center;
+
+    width: 300px;
+}
+.img-style{
+
+   width: 100%;
+}
+.card-body{
+    
+
+    padding: 10px;
+}
+.card-tittle{
+    font-size: 2rem;
+    text-align: center;
+    background-color:blue;
+}
+.card-body.card-disc{
+    text-align: justify;
+    line-height: 1.5px;
+    color:white;
+}
+.card:hover{
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: all 1s ease;
+}
+.card-con{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   
+}
+.profile{
+    width: 20%;
+    align-content: center;
+   
+}
+strong{
+    text-shadow: 2px 1px black;
+    color: white;
+    text-decoration: underline;
+}
+.conteniar{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: center;
+   
+}
