@@ -1,0 +1,2248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<head>
+  <meta charset='UTF-8'/>
+  <meta content='width=device-width, initial-scale=1.0' name='viewport'/>
+  <b:include data='blog' name='all-head-content'/>
+  <title><data:blog.pageTitle/></title>
+
+  <!-- SEO Meta Tags -->
+  <meta content='Sawon - Digital Marketer &amp; Graphic Designer from Bangladesh. Expert in SEO, Guest Posting, Facebook Ads, Logo Design, Branding &amp; Social Media Marketing.' name='description'/>
+  <meta content='Digital Marketer, Graphic Designer, SEO Expert, Facebook Ads, Logo Design, Branding, Bangladesh, Freelancer' name='keywords'/>
+  <meta content='Sawon' name='author'/>
+
+  <!-- Open Graph -->
+  <meta content='Sawon | Digital Marketer &amp; Graphic Designer' property='og:title'/>
+  <meta content='Professional Digital Marketer &amp; Graphic Designer. Expert in SEO, Facebook Ads, Logo Design &amp; Branding.' property='og:description'/>
+  <meta content='website' property='og:type'/>
+
+  <!-- Schema Markup -->
+  <script type='application/ld+json'>
+  //<![CDATA[
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sawon",
+    "jobTitle": "Digital Marketer &amp; Graphic Designer",
+    "description": "Professional freelancer specializing in SEO, Facebook Ads, Graphic Design, Logo Branding &amp; Content Writing",
+    "url": "https://sawonhot1.blogspot.com",
+    "email": ["sawon01934355838@gmail.com", "sawonhot1@gmail.com"],
+    "telephone": "+8801703808700",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Barishal",
+      "addressCountry": "Bangladesh"
+    },
+    "sameAs": [
+      "https://www.fiverr.com/sawonhot1",
+      "https://www.linkedin.com/in/sawonhot1",
+      "https://www.behance.net/sawonhot1"
+    ]
+  }
+  //]]>
+  </script>
+
+  <!-- Google Fonts -->
+  <link href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Poppins:wght@300;400;500;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap' rel='stylesheet'/>
+
+  <!-- Font Awesome -->
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css' rel='stylesheet'/>
+
+  <b:skin><![CDATA[
+  /* ============================================
+     SAWON PORTFOLIO - PREMIUM BLOGGER THEME
+     Dark Luxury | Electric Blue | Cinematic
+  ============================================ */
+
+  :root {
+    --bg-primary: #02020a;
+    --bg-secondary: #070714;
+    --bg-card: rgba(10, 10, 30, 0.7);
+    --bg-glass: rgba(15, 15, 40, 0.6);
+    --blue-primary: #0ea5e9;
+    --blue-bright: #38bdf8;
+    --blue-neon: #00d4ff;
+    --blue-deep: #0369a1;
+    --blue-glow: rgba(14, 165, 233, 0.3);
+    --blue-glow-strong: rgba(0, 212, 255, 0.5);
+    --accent-purple: #8b5cf6;
+    --accent-cyan: #06b6d4;
+    --text-primary: #f0f4ff;
+    --text-secondary: #94a3b8;
+    --text-muted: #475569;
+    --border-glass: rgba(14, 165, 233, 0.15);
+    --border-bright: rgba(14, 165, 233, 0.4);
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Poppins', sans-serif;
+    --font-ui: 'Inter', sans-serif;
+    --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-neon: 0 0 20px rgba(14,165,233,0.4), 0 0 60px rgba(14,165,233,0.15);
+    --shadow-card: 0 20px 60px rgba(0,0,0,0.6);
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+  }
+
+  [data-theme="light"] {
+    --bg-primary: #f0f4ff;
+    --bg-secondary: #e8eeff;
+    --bg-card: rgba(255,255,255,0.85);
+    --bg-glass: rgba(240,244,255,0.8);
+    --text-primary: #0f172a;
+    --text-secondary: #334155;
+    --text-muted: #64748b;
+    --border-glass: rgba(14,165,233,0.2);
+    --shadow-card: 0 20px 60px rgba(14,165,233,0.12);
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; overflow-x: hidden; }
+
+  body {
+    font-family: var(--font-body);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  ::selection { background: var(--blue-primary); color: #fff; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { background: var(--bg-secondary); }
+  ::-webkit-scrollbar-thumb { background: var(--blue-primary); border-radius: 4px; }
+
+  a { text-decoration: none; color: inherit; }
+  img { max-width: 100%; height: auto; }
+
+  /* ── CUSTOM CURSOR ── */
+  #cursor-dot {
+    position: fixed; width: 8px; height: 8px;
+    background: var(--blue-neon); border-radius: 50%;
+    pointer-events: none; z-index: 99999;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s;
+    box-shadow: 0 0 10px var(--blue-neon), 0 0 30px var(--blue-glow);
+  }
+  #cursor-ring {
+    position: fixed; width: 36px; height: 36px;
+    border: 1.5px solid rgba(14,165,233,0.6); border-radius: 50%;
+    pointer-events: none; z-index: 99998;
+    transform: translate(-50%, -50%);
+    transition: all 0.18s ease;
+  }
+
+  /* ── SCROLL PROGRESS ── */
+  #scroll-progress {
+    position: fixed; top: 0; left: 0; height: 3px;
+    background: linear-gradient(90deg, var(--blue-deep), var(--blue-neon), var(--accent-purple));
+    z-index: 9999; width: 0%; transition: width 0.1s;
+    box-shadow: 0 0 10px var(--blue-neon);
+  }
+
+  /* ── LOADING SCREEN ── */
+  #loader {
+    position: fixed; inset: 0;
+    background: #02020a;
+    z-index: 99997;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    transition: opacity 0.8s, visibility 0.8s;
+  }
+  #loader.hide { opacity: 0; visibility: hidden; }
+  .loader-logo {
+    font-family: var(--font-heading);
+    font-size: 3rem; font-weight: 900;
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon), var(--accent-purple));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    animation: loaderPulse 1.5s ease-in-out infinite;
+    letter-spacing: -2px;
+  }
+  .loader-bar-wrap {
+    width: 200px; height: 2px;
+    background: rgba(14,165,233,0.15);
+    border-radius: 2px; margin-top: 24px; overflow: hidden;
+  }
+  .loader-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--blue-primary), var(--blue-neon));
+    border-radius: 2px;
+    animation: loaderFill 2s ease forwards;
+    box-shadow: 0 0 10px var(--blue-neon);
+  }
+  @keyframes loaderFill { 0%{width:0%} 100%{width:100%} }
+  @keyframes loaderPulse { 0%,100%{opacity:1;filter:drop-shadow(0 0 20px rgba(14,165,233,0.8))} 50%{opacity:0.6;filter:none} }
+
+  /* ── PARTICLES ── */
+  #particles-canvas {
+    position: fixed; inset: 0;
+    z-index: 0; pointer-events: none;
+    opacity: 0.4;
+  }
+
+  /* ── NAVBAR ── */
+  #navbar {
+    position: fixed; top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0 5%;
+    height: 72px;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: var(--transition);
+    border-bottom: 1px solid transparent;
+  }
+  #navbar.scrolled {
+    background: rgba(2,2,10,0.92);
+    backdrop-filter: blur(24px);
+    border-bottom-color: var(--border-glass);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  }
+  .nav-logo {
+    font-family: var(--font-heading);
+    font-size: 1.5rem; font-weight: 900;
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+  }
+  .nav-logo span { color: var(--blue-neon); }
+  .nav-links {
+    display: flex; gap: 2rem; list-style: none;
+  }
+  .nav-links a {
+    font-family: var(--font-ui);
+    font-size: 0.85rem; font-weight: 500;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px; text-transform: uppercase;
+    transition: var(--transition); position: relative;
+    padding-bottom: 4px;
+  }
+  .nav-links a::after {
+    content: ''; position: absolute; bottom: 0; left: 0;
+    width: 0; height: 1.5px;
+    background: var(--blue-neon);
+    transition: width 0.3s;
+    box-shadow: 0 0 6px var(--blue-neon);
+  }
+  .nav-links a:hover { color: var(--text-primary); }
+  .nav-links a:hover::after { width: 100%; }
+  .nav-actions { display: flex; align-items: center; gap: 1rem; }
+  .btn-theme {
+    background: none; border: 1px solid var(--border-glass);
+    color: var(--text-secondary); cursor: pointer;
+    padding: 8px 12px; border-radius: 10px;
+    font-size: 0.9rem; transition: var(--transition);
+  }
+  .btn-theme:hover { border-color: var(--blue-primary); color: var(--blue-primary); }
+  .btn-nav-cta {
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon));
+    color: #fff; border: none; cursor: pointer;
+    padding: 10px 22px; border-radius: 50px;
+    font-family: var(--font-ui); font-size: 0.82rem; font-weight: 600;
+    letter-spacing: 0.5px; transition: var(--transition);
+    box-shadow: 0 0 20px var(--blue-glow);
+  }
+  .btn-nav-cta:hover { transform: translateY(-2px); box-shadow: var(--shadow-neon); }
+  .hamburger {
+    display: none; flex-direction: column; gap: 5px;
+    cursor: pointer; background: none; border: none; padding: 6px;
+  }
+  .hamburger span {
+    display: block; width: 24px; height: 2px;
+    background: var(--text-primary); border-radius: 2px;
+    transition: var(--transition);
+  }
+  .mobile-nav {
+    display: none; position: fixed; inset: 0; top: 72px;
+    background: rgba(2,2,10,0.97); backdrop-filter: blur(20px);
+    z-index: 999; padding: 3rem 2rem;
+    flex-direction: column; gap: 2rem;
+  }
+  .mobile-nav.open { display: flex; }
+  .mobile-nav a {
+    font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700;
+    color: var(--text-secondary); border-bottom: 1px solid var(--border-glass);
+    padding-bottom: 1rem; transition: var(--transition);
+  }
+  .mobile-nav a:hover { color: var(--blue-neon); }
+
+  /* ── SECTION BASE ── */
+  section { position: relative; z-index: 1; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+  .section-pad { padding: 100px 0; }
+
+  .section-label {
+    font-family: var(--font-ui); font-size: 0.75rem; font-weight: 600;
+    color: var(--blue-neon); letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 12px; display: flex; align-items: center; gap: 10px;
+  }
+  .section-label::before {
+    content: ''; display: block; width: 30px; height: 1.5px;
+    background: var(--blue-neon); box-shadow: 0 0 6px var(--blue-neon);
+  }
+  .section-title {
+    font-family: var(--font-heading); font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800; line-height: 1.15; letter-spacing: -1px;
+    margin-bottom: 1rem;
+  }
+  .section-title .highlight {
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .section-sub {
+    font-size: 1.05rem; color: var(--text-secondary); line-height: 1.7;
+    max-width: 560px;
+  }
+  .section-header { text-align: center; margin-bottom: 60px; }
+  .section-header .section-label { justify-content: center; }
+  .section-header .section-sub { margin: 0 auto; }
+
+  /* ── REVEAL ANIMATIONS ── */
+  .reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal-left.visible { opacity: 1; transform: translateX(0); }
+  .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh; display: flex; align-items: center;
+    padding-top: 72px; overflow: hidden;
+    background: radial-gradient(ellipse 80% 60% at 60% 40%, rgba(14,165,233,0.07) 0%, transparent 60%),
+                radial-gradient(ellipse 40% 40% at 80% 70%, rgba(139,92,246,0.05) 0%, transparent 50%),
+                var(--bg-primary);
+  }
+  .hero-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: center; min-height: calc(100vh - 72px);
+    padding: 60px 0;
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    backdrop-filter: blur(12px); border-radius: 50px;
+    padding: 8px 18px; margin-bottom: 28px;
+    font-family: var(--font-ui); font-size: 0.78rem; font-weight: 500;
+    color: var(--blue-bright); letter-spacing: 1px;
+  }
+  .hero-badge::before {
+    content: ''; display: block; width: 6px; height: 6px;
+    background: var(--blue-neon); border-radius: 50%;
+    box-shadow: 0 0 8px var(--blue-neon);
+    animation: blink 2s infinite;
+  }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0.3} }
+  .hero-title {
+    font-family: var(--font-heading); font-size: clamp(2.4rem, 5vw, 3.8rem);
+    font-weight: 900; line-height: 1.1; letter-spacing: -2px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-title .line-blue {
+    background: linear-gradient(135deg, var(--blue-primary) 0%, var(--blue-neon) 50%, var(--accent-purple) 100%);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  }
+  .hero-subtitle {
+    font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;
+    margin-bottom: 2.5rem; max-width: 480px;
+  }
+  .hero-subtitle strong { color: var(--blue-bright); font-weight: 600; }
+  #typed-text {
+    color: var(--blue-neon);
+    border-right: 2px solid var(--blue-neon);
+    padding-right: 4px;
+    animation: blink-cursor 0.8s infinite;
+  }
+  @keyframes blink-cursor { 0%,100%{border-color:var(--blue-neon)} 50%{border-color:transparent} }
+  .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary));
+    color: #fff; padding: 14px 32px; border-radius: 50px;
+    font-family: var(--font-ui); font-size: 0.9rem; font-weight: 600;
+    border: none; cursor: pointer; transition: var(--transition);
+    box-shadow: 0 0 25px var(--blue-glow);
+    letter-spacing: 0.3px;
+  }
+  .btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 40px var(--blue-glow-strong), 0 10px 30px rgba(0,0,0,0.3);
+  }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: transparent;
+    color: var(--text-primary); padding: 13px 32px; border-radius: 50px;
+    font-family: var(--font-ui); font-size: 0.9rem; font-weight: 600;
+    border: 1.5px solid var(--border-bright); cursor: pointer;
+    transition: var(--transition); letter-spacing: 0.3px;
+  }
+  .btn-secondary:hover {
+    background: var(--blue-glow); border-color: var(--blue-neon);
+    color: var(--blue-bright); transform: translateY(-3px);
+  }
+  .btn-ghost {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--bg-glass); color: var(--text-secondary);
+    padding: 13px 28px; border-radius: 50px;
+    font-family: var(--font-ui); font-size: 0.9rem; font-weight: 500;
+    border: 1px solid var(--border-glass); cursor: pointer;
+    transition: var(--transition); backdrop-filter: blur(10px);
+  }
+  .btn-ghost:hover { color: var(--blue-bright); border-color: var(--border-bright); }
+  .hero-socials { display: flex; gap: 1rem; }
+  .hero-social-link {
+    width: 42px; height: 42px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    color: var(--text-secondary); font-size: 1rem;
+    transition: var(--transition); backdrop-filter: blur(10px);
+  }
+  .hero-social-link:hover {
+    background: var(--blue-glow); border-color: var(--blue-primary);
+    color: var(--blue-bright); transform: translateY(-3px);
+    box-shadow: 0 0 15px var(--blue-glow);
+  }
+  .hero-visual { position: relative; display: flex; justify-content: center; align-items: center; }
+  .hero-img-wrap {
+    position: relative; width: 380px; height: 460px;
+  }
+  .hero-img-bg {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(14,165,233,0.12), rgba(139,92,246,0.08));
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(20px);
+  }
+  .hero-img-glow {
+    position: absolute; top: -20px; left: -20px; right: -20px; bottom: -20px;
+    border-radius: calc(var(--radius-xl) + 20px);
+    background: radial-gradient(ellipse at center, rgba(14,165,233,0.15) 0%, transparent 65%);
+    animation: glowPulse 3s ease-in-out infinite;
+  }
+  @keyframes glowPulse { 0%,100%{opacity:0.8;transform:scale(1)} 50%{opacity:1;transform:scale(1.04)} }
+  .hero-profile-img {
+    position: relative; z-index: 2;
+    width: 100%; height: 100%; border-radius: var(--radius-xl);
+    object-fit: cover; display: block;
+    filter: drop-shadow(0 0 30px rgba(14,165,233,0.3));
+  }
+  .hero-img-placeholder {
+    position: relative; z-index: 2;
+    width: 100%; height: 100%; border-radius: var(--radius-xl);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, rgba(14,165,233,0.05), rgba(139,92,246,0.05));
+    border: 1px solid var(--border-glass);
+    color: var(--text-muted);
+    font-family: var(--font-ui); font-size: 0.85rem; text-align: center;
+    padding: 2rem;
+  }
+  .hero-img-placeholder i { font-size: 4rem; color: var(--blue-primary); margin-bottom: 1rem; opacity: 0.6; }
+  .hero-img-placeholder p { color: var(--text-muted); font-size: 0.8rem; line-height: 1.6; }
+  .hero-stats-float {
+    position: absolute; bottom: -20px; left: -30px;
+    background: var(--bg-glass); backdrop-filter: blur(20px);
+    border: 1px solid var(--border-glass); border-radius: 16px;
+    padding: 16px 20px; z-index: 10;
+    box-shadow: var(--shadow-card);
+  }
+  .hero-stats-float .stat-num {
+    font-family: var(--font-heading); font-size: 1.6rem; font-weight: 800;
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .hero-stats-float .stat-lbl {
+    font-size: 0.72rem; color: var(--text-muted); margin-top: 2px;
+    font-family: var(--font-ui);
+  }
+  .hero-badge-float {
+    position: absolute; top: 20px; right: -20px;
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary));
+    border-radius: 14px; padding: 12px 16px;
+    z-index: 10; box-shadow: var(--shadow-neon);
+    font-family: var(--font-ui); font-size: 0.78rem; font-weight: 600;
+    color: #fff; text-align: center; white-space: nowrap;
+    animation: float 3s ease-in-out infinite;
+  }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+
+  /* ── ABOUT ── */
+  #about {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 70px; align-items: center;
+  }
+  .about-visual { position: relative; }
+  .about-img-container {
+    position: relative; border-radius: var(--radius-xl);
+    overflow: visible;
+  }
+  .about-img-inner {
+    width: 100%; aspect-ratio: 4/5;
+    background: linear-gradient(135deg, rgba(14,165,233,0.08), rgba(139,92,246,0.06));
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border-glass);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden; position: relative;
+  }
+  .about-img-inner img { width:100%; height:100%; object-fit: cover; border-radius: var(--radius-xl); }
+  .about-img-placeholder {
+    display: flex; flex-direction: column; align-items: center;
+    color: var(--text-muted); gap: 1rem; padding: 2rem; text-align: center;
+  }
+  .about-img-placeholder i { font-size: 5rem; color: var(--blue-primary); opacity: 0.4; }
+  .about-img-deco {
+    position: absolute; bottom: -24px; right: -24px;
+    width: 120px; height: 120px;
+    border: 2px solid var(--blue-primary);
+    border-radius: var(--radius-lg);
+    opacity: 0.3; animation: spin-slow 12s linear infinite;
+  }
+  @keyframes spin-slow { to { transform: rotate(360deg); } }
+  .about-exp-badge {
+    position: absolute; top: 30px; left: -30px;
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary));
+    border-radius: 16px; padding: 16px 20px;
+    box-shadow: var(--shadow-neon); z-index: 5;
+    text-align: center;
+  }
+  .about-exp-badge .num {
+    font-family: var(--font-heading); font-size: 2rem; font-weight: 900; color: #fff;
+    line-height: 1;
+  }
+  .about-exp-badge .label {
+    font-family: var(--font-ui); font-size: 0.7rem; color: rgba(255,255,255,0.8);
+    margin-top: 4px; font-weight: 500;
+  }
+  .about-content p { color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1rem; }
+  .about-highlights {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 16px; margin: 2rem 0;
+  }
+  .highlight-item {
+    display: flex; align-items: center; gap: 10px;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: 12px; padding: 12px 16px;
+    backdrop-filter: blur(10px); transition: var(--transition);
+  }
+  .highlight-item:hover { border-color: var(--blue-primary); transform: translateX(4px); }
+  .highlight-item i { color: var(--blue-neon); font-size: 0.9rem; width: 16px; }
+  .highlight-item span { font-family: var(--font-ui); font-size: 0.85rem; color: var(--text-secondary); }
+
+  /* ── STATS ── */
+  #stats {
+    padding: 70px 0;
+    background: linear-gradient(90deg, rgba(14,165,233,0.04) 0%, rgba(139,92,246,0.03) 100%);
+    border-top: 1px solid var(--border-glass);
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .stats-grid {
+    display: grid; grid-template-columns: repeat(4,1fr);
+    gap: 2px;
+  }
+  .stat-card {
+    text-align: center; padding: 2rem 1rem;
+    border-right: 1px solid var(--border-glass);
+    position: relative;
+  }
+  .stat-card:last-child { border-right: none; }
+  .stat-icon {
+    font-size: 1.8rem; color: var(--blue-primary); margin-bottom: 12px;
+    display: block;
+  }
+  .stat-number {
+    font-family: var(--font-heading); font-size: 2.6rem; font-weight: 900;
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    line-height: 1;
+  }
+  .stat-plus { color: var(--blue-neon); }
+  .stat-label {
+    font-family: var(--font-ui); font-size: 0.82rem; color: var(--text-muted);
+    margin-top: 6px; letter-spacing: 0.5px; text-transform: uppercase;
+  }
+
+  /* ── SERVICES ── */
+  #services { background: var(--bg-secondary); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+  }
+  .service-card {
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg); padding: 36px 28px;
+    backdrop-filter: blur(16px);
+    transition: var(--transition); position: relative; overflow: hidden;
+    cursor: default;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--blue-primary), transparent);
+    opacity: 0; transition: opacity 0.4s;
+  }
+  .service-card::after {
+    content: ''; position: absolute; top: -50%; left: -50%;
+    width: 200%; height: 200%;
+    background: radial-gradient(ellipse at center, rgba(14,165,233,0.05) 0%, transparent 50%);
+    opacity: 0; transition: opacity 0.4s; pointer-events: none;
+  }
+  .service-card:hover { border-color: var(--blue-primary); transform: translateY(-6px); box-shadow: var(--shadow-neon); }
+  .service-card:hover::before, .service-card:hover::after { opacity: 1; }
+  .service-icon-wrap {
+    width: 60px; height: 60px; border-radius: 16px;
+    background: linear-gradient(135deg, rgba(14,165,233,0.15), rgba(14,165,233,0.05));
+    border: 1px solid rgba(14,165,233,0.25);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; color: var(--blue-neon); margin-bottom: 1.5rem;
+    transition: var(--transition);
+  }
+  .service-card:hover .service-icon-wrap {
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary));
+    box-shadow: 0 0 20px var(--blue-glow);
+  }
+  .service-title {
+    font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700;
+    margin-bottom: 0.8rem; color: var(--text-primary);
+  }
+  .service-desc {
+    font-size: 0.88rem; color: var(--text-secondary); line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+  .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+  .stag {
+    font-family: var(--font-ui); font-size: 0.7rem; font-weight: 500;
+    padding: 4px 10px; border-radius: 50px;
+    background: rgba(14,165,233,0.1); color: var(--blue-bright);
+    border: 1px solid rgba(14,165,233,0.2);
+  }
+  .service-num {
+    position: absolute; top: 24px; right: 24px;
+    font-family: var(--font-heading); font-size: 3rem; font-weight: 900;
+    color: rgba(14,165,233,0.04); line-height: 1;
+    transition: var(--transition);
+  }
+  .service-card:hover .service-num { color: rgba(14,165,233,0.08); }
+
+  /* ── PORTFOLIO ── */
+  #portfolio { background: var(--bg-primary); }
+  .portfolio-filters {
+    display: flex; justify-content: center; gap: 10px;
+    flex-wrap: wrap; margin-bottom: 50px;
+  }
+  .filter-btn {
+    padding: 9px 22px; border-radius: 50px;
+    font-family: var(--font-ui); font-size: 0.82rem; font-weight: 500;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    color: var(--text-secondary); cursor: pointer;
+    transition: var(--transition); backdrop-filter: blur(10px);
+    letter-spacing: 0.3px;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--blue-glow); border-color: var(--blue-primary);
+    color: var(--blue-bright);
+  }
+  .portfolio-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+  }
+  .portfolio-item {
+    border-radius: var(--radius-lg); overflow: hidden;
+    aspect-ratio: 4/3; position: relative; cursor: pointer;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    transition: var(--transition);
+  }
+  .portfolio-item:hover { transform: scale(1.02); box-shadow: var(--shadow-neon); }
+  .portfolio-item:first-child, .portfolio-item:nth-child(4) { grid-column: span 2; aspect-ratio: 16/9; }
+  .portfolio-thumb {
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(14,165,233,0.1), rgba(139,92,246,0.08));
+    display: flex; align-items: center; justify-content: center;
+    transition: var(--transition);
+  }
+  .portfolio-thumb i { font-size: 3rem; color: var(--blue-primary); opacity: 0.3; }
+  .portfolio-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(2,2,10,0.95) 0%, transparent 50%);
+    opacity: 0; transition: var(--transition);
+    display: flex; align-items: flex-end; padding: 24px;
+    flex-direction: column; justify-content: flex-end;
+  }
+  .portfolio-item:hover .portfolio-overlay { opacity: 1; }
+  .portfolio-cat {
+    font-family: var(--font-ui); font-size: 0.7rem; font-weight: 600;
+    color: var(--blue-neon); letter-spacing: 2px; text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .portfolio-name {
+    font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700;
+    color: var(--text-primary);
+  }
+  .portfolio-link {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: var(--blue-primary); display: flex; align-items: center;
+    justify-content: center; color: #fff; font-size: 0.9rem;
+    position: absolute; top: 20px; right: 20px;
+    transform: scale(0); transition: var(--transition);
+    box-shadow: var(--shadow-neon);
+  }
+  .portfolio-item:hover .portfolio-link { transform: scale(1); }
+
+  /* ── FREELANCE PROFILES ── */
+  #profiles {
+    background: var(--bg-secondary);
+  }
+  .profiles-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  .profile-card {
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg); padding: 32px 24px;
+    backdrop-filter: blur(16px); transition: var(--transition);
+    text-align: center; display: flex; flex-direction: column;
+    align-items: center; gap: 1rem; position: relative; overflow: hidden;
+    text-decoration: none; color: inherit;
+  }
+  .profile-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: var(--card-accent, linear-gradient(90deg, var(--blue-primary), var(--blue-neon)));
+    transform: scaleX(0); transition: transform 0.4s;
+  }
+  .profile-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-card); border-color: var(--blue-primary); }
+  .profile-card:hover::before { transform: scaleX(1); }
+  .profile-platform-icon {
+    width: 64px; height: 64px; border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; background: var(--icon-bg, rgba(14,165,233,0.1));
+    transition: var(--transition);
+  }
+  .profile-card:hover .profile-platform-icon { transform: scale(1.1); }
+  .profile-platform { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; }
+  .profile-handle { font-family: var(--font-ui); font-size: 0.82rem; color: var(--text-muted); }
+  .profile-action {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-family: var(--font-ui); font-size: 0.8rem; font-weight: 600;
+    color: var(--blue-bright); margin-top: auto;
+    padding: 8px 18px; border-radius: 50px;
+    border: 1px solid rgba(14,165,233,0.3);
+    transition: var(--transition);
+  }
+  .profile-card:hover .profile-action { background: var(--blue-glow); }
+
+  /* ── SKILLS ── */
+  #skills { background: var(--bg-primary); }
+  .skills-layout {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 60px; align-items: start;
+  }
+  .skills-intro p { color: var(--text-secondary); line-height: 1.8; font-size: 1rem; margin-bottom: 1.5rem; }
+  .skill-bars { display: flex; flex-direction: column; gap: 28px; }
+  .skill-bar-item {}
+  .skill-bar-header {
+    display: flex; justify-content: space-between; align-items: center;
+    margin-bottom: 10px;
+  }
+  .skill-name { font-family: var(--font-ui); font-size: 0.88rem; font-weight: 600; color: var(--text-primary); }
+  .skill-pct { font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700; color: var(--blue-bright); }
+  .skill-track {
+    height: 6px; background: rgba(14,165,233,0.1);
+    border-radius: 6px; overflow: hidden;
+  }
+  .skill-fill {
+    height: 100%; border-radius: 6px; width: 0;
+    background: linear-gradient(90deg, var(--blue-deep), var(--blue-primary), var(--blue-neon));
+    transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
+    box-shadow: 0 0 10px var(--blue-glow);
+    position: relative;
+  }
+  .skill-fill::after {
+    content: ''; position: absolute; right: 0; top: 50%;
+    transform: translateY(-50%);
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--blue-neon);
+    box-shadow: 0 0 8px var(--blue-neon);
+  }
+  .tools-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 12px; margin-top: 2rem;
+  }
+  .tool-tag {
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: 10px; padding: 12px 14px;
+    font-family: var(--font-ui); font-size: 0.8rem; font-weight: 500;
+    color: var(--text-secondary); text-align: center;
+    transition: var(--transition); backdrop-filter: blur(10px);
+    display: flex; align-items: center; gap: 8px; justify-content: center;
+  }
+  .tool-tag:hover { border-color: var(--blue-primary); color: var(--blue-bright); }
+  .tool-tag i { color: var(--blue-primary); }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials { background: var(--bg-secondary); overflow: hidden; }
+  .testimonials-wrapper { position: relative; }
+  .testimonials-slider {
+    display: flex; gap: 24px;
+    overflow: hidden; position: relative;
+  }
+  .testimonials-track {
+    display: flex; gap: 24px;
+    transition: transform 0.6s cubic-bezier(0.4,0,0.2,1);
+  }
+  .testi-card {
+    min-width: calc(50% - 12px);
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg); padding: 36px 32px;
+    backdrop-filter: blur(16px); transition: var(--transition);
+    flex-shrink: 0;
+  }
+  .testi-card:hover { border-color: var(--blue-primary); box-shadow: var(--shadow-neon); }
+  .testi-quote {
+    font-size: 2.5rem; line-height: 1; color: var(--blue-primary);
+    margin-bottom: 1rem; font-family: Georgia, serif;
+  }
+  .testi-text {
+    font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8;
+    margin-bottom: 1.5rem; font-style: italic;
+  }
+  .testi-author { display: flex; align-items: center; gap: 14px; }
+  .testi-avatar {
+    width: 48px; height: 48px; border-radius: 50%;
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary));
+    display: flex; align-items: center; justify-content: center;
+    font-family: var(--font-heading); font-size: 1.1rem; font-weight: 800;
+    color: #fff; border: 2px solid var(--blue-primary);
+    flex-shrink: 0;
+  }
+  .testi-name { font-family: var(--font-heading); font-size: 0.95rem; font-weight: 700; }
+  .testi-role { font-family: var(--font-ui); font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+  .testi-stars { color: #f59e0b; font-size: 0.8rem; margin-top: 4px; }
+  .testi-nav {
+    display: flex; justify-content: center; align-items: center;
+    gap: 1rem; margin-top: 2rem;
+  }
+  .testi-btn {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    color: var(--text-secondary); cursor: pointer; font-size: 1rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: var(--transition); backdrop-filter: blur(10px);
+  }
+  .testi-btn:hover { background: var(--blue-glow); border-color: var(--blue-primary); color: var(--blue-bright); }
+  .testi-dots { display: flex; gap: 8px; }
+  .testi-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--text-muted); cursor: pointer; transition: var(--transition);
+  }
+  .testi-dot.active { background: var(--blue-primary); box-shadow: 0 0 8px var(--blue-primary); width: 24px; border-radius: 4px; }
+
+  /* ── BLOG ── */
+  #blog { background: var(--bg-primary); }
+  .blog-grid {
+    display: grid; grid-template-columns: repeat(3,1fr);
+    gap: 24px;
+  }
+  .blog-card {
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg); overflow: hidden;
+    backdrop-filter: blur(16px); transition: var(--transition);
+  }
+  .blog-card:hover { transform: translateY(-6px); border-color: var(--blue-primary); box-shadow: var(--shadow-neon); }
+  .blog-thumb {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, rgba(14,165,233,0.1), rgba(139,92,246,0.06));
+    overflow: hidden; position: relative;
+  }
+  .blog-thumb img { width:100%; height:100%; object-fit:cover; transition: transform 0.5s; }
+  .blog-card:hover .blog-thumb img { transform: scale(1.05); }
+  .blog-thumb-placeholder {
+    width:100%; height:100%; display:flex; align-items:center; justify-content:center;
+    color: var(--text-muted); font-size: 2rem;
+  }
+  .blog-body { padding: 24px; }
+  .blog-meta {
+    display: flex; gap: 12px; margin-bottom: 10px;
+    font-family: var(--font-ui); font-size: 0.75rem; color: var(--text-muted);
+    align-items: center;
+  }
+  .blog-cat {
+    background: rgba(14,165,233,0.1); color: var(--blue-bright);
+    padding: 3px 10px; border-radius: 50px; font-weight: 600;
+  }
+  .blog-title {
+    font-family: var(--font-heading); font-size: 1rem; font-weight: 700;
+    line-height: 1.4; margin-bottom: 0.8rem; color: var(--text-primary);
+    transition: var(--transition);
+  }
+  .blog-card:hover .blog-title { color: var(--blue-bright); }
+  .blog-excerpt { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem; }
+  .blog-read-more {
+    font-family: var(--font-ui); font-size: 0.8rem; font-weight: 600;
+    color: var(--blue-bright); display: flex; align-items: center; gap: 6px;
+    transition: var(--transition);
+  }
+  .blog-card:hover .blog-read-more { gap: 10px; }
+  /* Blogger feed integration */
+  #blog-feed-container .blog-grid { }
+
+  /* ── CONTACT ── */
+  #contact { background: var(--bg-secondary); }
+  .contact-layout {
+    display: grid; grid-template-columns: 1fr 1.5fr;
+    gap: 60px; align-items: start;
+  }
+  .contact-info-stack { display: flex; flex-direction: column; gap: 20px; }
+  .contact-card {
+    display: flex; align-items: flex-start; gap: 16px;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg); padding: 22px 20px;
+    backdrop-filter: blur(16px); transition: var(--transition);
+  }
+  .contact-card:hover { border-color: var(--blue-primary); transform: translateX(6px); }
+  .contact-card-icon {
+    width: 46px; height: 46px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary));
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.1rem; color: #fff; flex-shrink: 0;
+    box-shadow: 0 0 15px var(--blue-glow);
+  }
+  .contact-card-label {
+    font-family: var(--font-ui); font-size: 0.72rem; color: var(--text-muted);
+    text-transform: uppercase; letter-spacing: 1px; font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .contact-card-value {
+    font-family: var(--font-ui); font-size: 0.9rem; color: var(--text-primary);
+    word-break: break-all; line-height: 1.5;
+  }
+  .contact-card-value a { color: var(--blue-bright); transition: var(--transition); }
+  .contact-card-value a:hover { color: var(--blue-neon); }
+  .contact-form-wrap {
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    border-radius: var(--radius-xl); padding: 40px 36px;
+    backdrop-filter: blur(20px);
+  }
+  .form-title {
+    font-family: var(--font-heading); font-size: 1.4rem; font-weight: 800;
+    margin-bottom: 24px;
+  }
+  .form-group { margin-bottom: 20px; }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .form-group label {
+    display: block; font-family: var(--font-ui); font-size: 0.8rem;
+    font-weight: 600; color: var(--text-secondary); margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  .form-input, .form-textarea, .form-select {
+    width: 100%; background: rgba(10,10,30,0.5);
+    border: 1px solid var(--border-glass); border-radius: 12px;
+    padding: 13px 16px; color: var(--text-primary);
+    font-family: var(--font-ui); font-size: 0.9rem;
+    transition: var(--transition); outline: none;
+    resize: none;
+  }
+  .form-input:focus, .form-textarea:focus, .form-select:focus {
+    border-color: var(--blue-primary);
+    box-shadow: 0 0 0 3px rgba(14,165,233,0.12);
+    background: rgba(14,165,233,0.04);
+  }
+  .form-input::placeholder, .form-textarea::placeholder { color: var(--text-muted); }
+  .form-textarea { min-height: 120px; }
+  .form-select { cursor: pointer; }
+  .form-select option { background: #0a0a1e; }
+  .btn-submit {
+    width: 100%; padding: 15px;
+    background: linear-gradient(135deg, var(--blue-deep), var(--blue-primary), var(--blue-neon));
+    border: none; border-radius: 12px; color: #fff;
+    font-family: var(--font-ui); font-size: 0.95rem; font-weight: 700;
+    cursor: pointer; transition: var(--transition);
+    letter-spacing: 0.5px; box-shadow: 0 0 25px var(--blue-glow);
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+  }
+  .btn-submit:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 40px var(--blue-glow-strong);
+  }
+  .form-note {
+    font-family: var(--font-ui); font-size: 0.75rem; color: var(--text-muted);
+    text-align: center; margin-top: 12px;
+  }
+
+  /* ── WHATSAPP FLOAT ── */
+  #wa-float {
+    position: fixed; bottom: 30px; right: 30px; z-index: 9990;
+    width: 58px; height: 58px; border-radius: 50%;
+    background: linear-gradient(135deg, #25d366, #128c7e);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; color: #fff; cursor: pointer;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+    transition: var(--transition); text-decoration: none;
+    animation: float 3s ease-in-out infinite;
+  }
+  #wa-float:hover { transform: scale(1.1) translateY(-4px); box-shadow: 0 8px 30px rgba(37,211,102,0.7); }
+  .wa-pulse {
+    position: absolute; inset: -4px; border-radius: 50%;
+    border: 2px solid rgba(37,211,102,0.4);
+    animation: pulse-ring 2s infinite;
+  }
+  @keyframes pulse-ring { 0%{transform:scale(1);opacity:1} 100%{transform:scale(1.4);opacity:0} }
+
+  /* ── FOOTER ── */
+  #footer {
+    background: var(--bg-primary); padding: 60px 0 30px;
+    border-top: 1px solid var(--border-glass);
+  }
+  .footer-grid {
+    display: grid; grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px; margin-bottom: 50px;
+  }
+  .footer-brand-name {
+    font-family: var(--font-heading); font-size: 1.6rem; font-weight: 900;
+    background: linear-gradient(135deg, var(--blue-primary), var(--blue-neon));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+  .footer-tagline { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; }
+  .footer-socials { display: flex; gap: 10px; }
+  .footer-social {
+    width: 38px; height: 38px; border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--bg-glass); border: 1px solid var(--border-glass);
+    color: var(--text-secondary); font-size: 0.9rem;
+    transition: var(--transition); backdrop-filter: blur(10px);
+  }
+  .footer-social:hover {
+    background: var(--blue-glow); border-color: var(--blue-primary);
+    color: var(--blue-bright); transform: translateY(-3px);
+  }
+  .footer-col-title {
+    font-family: var(--font-heading); font-size: 0.9rem; font-weight: 700;
+    color: var(--text-primary); margin-bottom: 1.2rem;
+    text-transform: uppercase; letter-spacing: 1px;
+  }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a {
+    font-size: 0.88rem; color: var(--text-secondary);
+    transition: var(--transition); display: flex; align-items: center; gap: 6px;
+  }
+  .footer-links a:hover { color: var(--blue-bright); transform: translateX(4px); }
+  .footer-links a::before { content: '›'; color: var(--blue-primary); }
+  .footer-bottom {
+    padding-top: 30px; border-top: 1px solid var(--border-glass);
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-copy {
+    font-family: var(--font-ui); font-size: 0.8rem; color: var(--text-muted);
+  }
+  .footer-copy a { color: var(--blue-bright); }
+  .footer-made {
+    font-family: var(--font-ui); font-size: 0.8rem; color: var(--text-muted);
+  }
+  .footer-made span { color: var(--blue-neon); }
+
+  /* ── BLOGGER WIDGET OVERRIDES ── */
+  .widget { margin: 0 !important; }
+  #blog-posts-widget-1, #blog-posts-widget-2 { display: none !important; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .services-grid { grid-template-columns: repeat(2,1fr); }
+    .portfolio-grid { grid-template-columns: repeat(2,1fr); }
+    .portfolio-item:first-child, .portfolio-item:nth-child(4) { grid-column: span 1; aspect-ratio: 4/3; }
+    .profiles-grid { grid-template-columns: repeat(2,1fr); }
+    .stats-grid { grid-template-columns: repeat(2,1fr); }
+    .stat-card { border-right: none; border-bottom: 1px solid var(--border-glass); }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 768px) {
+    .nav-links, .btn-nav-cta { display: none !important; }
+    .hamburger { display: flex !important; }
+    .hero-grid { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .hero-btns, .hero-socials { justify-content: center; }
+    .hero-subtitle { margin-left: auto; margin-right: auto; }
+    .hero-visual { order: -1; }
+    .hero-img-wrap { width: 280px; height: 340px; }
+    .hero-stats-float { left: 0; }
+    .about-grid, .skills-layout, .contact-layout { grid-template-columns: 1fr; }
+    .about-exp-badge { left: 10px; }
+    .services-grid, .portfolio-grid, .blog-grid { grid-template-columns: 1fr; }
+    .profiles-grid { grid-template-columns: repeat(2,1fr); }
+    .testi-card { min-width: calc(100% - 0px); }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-layout { grid-template-columns: 1fr; }
+    .about-highlights { grid-template-columns: 1fr; }
+    .tools-grid { grid-template-columns: repeat(2,1fr); }
+  }
+  @media (max-width: 480px) {
+    .hero-btns { flex-direction: column; }
+    .profiles-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .hero-title { font-size: 2rem; letter-spacing: -1px; }
+  }
+  ]]></b:skin>
+</head>
+
+<body>
+
+  <!-- ── CURSOR ── -->
+  <div id='cursor-dot'></div>
+  <div id='cursor-ring'></div>
+
+  <!-- ── SCROLL PROGRESS ── -->
+  <div id='scroll-progress'></div>
+
+  <!-- ── LOADER ── -->
+  <div id='loader'>
+    <div class='loader-logo'>SAWON</div>
+    <div class='loader-bar-wrap'>
+      <div class='loader-bar'></div>
+    </div>
+  </div>
+
+  <!-- ── PARTICLES ── -->
+  <canvas id='particles-canvas'></canvas>
+
+  <!-- ── NAVBAR ── -->
+  <nav id='navbar'>
+    <a class='nav-logo' href='#hero'>SAWON<span>.</span></a>
+    <ul class='nav-links'>
+      <li><a href='#about'>About</a></li>
+      <li><a href='#services'>Services</a></li>
+      <li><a href='#portfolio'>Portfolio</a></li>
+      <li><a href='#profiles'>Profiles</a></li>
+      <li><a href='#skills'>Skills</a></li>
+      <li><a href='#blog'>Blog</a></li>
+      <li><a href='#contact'>Contact</a></li>
+    </ul>
+    <div class='nav-actions'>
+      <button class='btn-theme' id='theme-toggle' title='Toggle theme'>
+        <i class='fas fa-moon' id='theme-icon'></i>
+      </button>
+      <a class='btn-nav-cta' href='#contact'>Hire Me</a>
+      <button class='hamburger' id='hamburger' aria-label='Menu'>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── MOBILE NAV ── -->
+  <nav class='mobile-nav' id='mobile-nav'>
+    <a href='#about' onclick='closeMobileNav()'>About</a>
+    <a href='#services' onclick='closeMobileNav()'>Services</a>
+    <a href='#portfolio' onclick='closeMobileNav()'>Portfolio</a>
+    <a href='#profiles' onclick='closeMobileNav()'>Profiles</a>
+    <a href='#skills' onclick='closeMobileNav()'>Skills</a>
+    <a href='#blog' onclick='closeMobileNav()'>Blog</a>
+    <a href='#contact' onclick='closeMobileNav()'>Contact</a>
+  </nav>
+
+  <!-- ══════════════════════════════════
+       SECTION 1: HERO
+  ══════════════════════════════════ -->
+  <section id='hero'>
+    <div class='container'>
+      <div class='hero-grid'>
+        <!-- Content -->
+        <div class='hero-content'>
+          <div class='hero-badge reveal'>
+            Available for Freelance Projects
+          </div>
+          <h1 class='hero-title reveal'>
+            Helping Brands Grow with<br/>
+            <span class='line-blue'>Creative Digital</span><br/>
+            Marketing
+          </h1>
+          <p class='hero-subtitle reveal'>
+            Professional <strong>Digital Marketer &amp; Graphic Designer</strong> from Bangladesh.
+            I&apos;m <span id='typed-text'></span>
+          </p>
+          <div class='hero-btns reveal'>
+            <a class='btn-primary' href='#contact'>
+              <i class='fas fa-bolt'></i> Hire Me Now
+            </a>
+            <a class='btn-secondary' href='#portfolio'>
+              <i class='fas fa-th-large'></i> View Portfolio
+            </a>
+            <a class='btn-ghost' href='#contact'>
+              <i class='fas fa-envelope'></i> Contact
+            </a>
+          </div>
+          <div class='hero-socials reveal'>
+            <a class='hero-social-link' href='https://www.fiverr.com/sawonhot1' target='_blank' title='Fiverr'><i class='fas fa-star'></i></a>
+            <a class='hero-social-link' href='https://www.facebook.com/designanddigitalhubbd' target='_blank' title='Facebook'><i class='fab fa-facebook-f'></i></a>
+            <a class='hero-social-link' href='https://www.linkedin.com/in/sawonhot1' target='_blank' title='LinkedIn'><i class='fab fa-linkedin-in'></i></a>
+            <a class='hero-social-link' href='https://www.behance.net/sawonhot1' target='_blank' title='Behance'><i class='fab fa-behance'></i></a>
+            <a class='hero-social-link' href='https://www.instagram.com/sawonak47' target='_blank' title='Instagram'><i class='fab fa-instagram'></i></a>
+            <a class='hero-social-link' href='https://www.youtube.com/@DesignandDigitalHub' target='_blank' title='YouTube'><i class='fab fa-youtube'></i></a>
+          </div>
+        </div>
+        <!-- Visual -->
+        <div class='hero-visual reveal-right'>
+          <div class='hero-img-wrap'>
+            <div class='hero-img-glow'></div>
+            <div class='hero-img-bg'></div>
+            <!-- REPLACE src BELOW WITH YOUR ACTUAL PHOTO URL -->
+            <!-- <img class='hero-profile-img' src='YOUR_PHOTO_URL_HERE' alt='Sawon - Digital Marketer &amp; Graphic Designer' /> -->
+            <div class='hero-img-placeholder'>
+              <i class='fas fa-user-circle'></i>
+              <p><strong>Add Your Photo</strong><br/>Replace this block with an &lt;img&gt; tag pointing to your hosted photo URL</p>
+            </div>
+            <div class='hero-stats-float'>
+              <div class='stat-num' data-target='150'>0</div>
+              <div class='stat-lbl'>Happy Clients</div>
+            </div>
+            <div class='hero-badge-float'>
+              ⚡ Top Rated Seller
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       STATS BAR
+  ══════════════════════════════════ -->
+  <div id='stats'>
+    <div class='container'>
+      <div class='stats-grid'>
+        <div class='stat-card reveal'>
+          <i class='fas fa-users stat-icon'></i>
+          <div class='stat-number'><span class='counter' data-target='150'>0</span><span class='stat-plus'>+</span></div>
+          <div class='stat-label'>Happy Clients</div>
+        </div>
+        <div class='stat-card reveal'>
+          <i class='fas fa-briefcase stat-icon'></i>
+          <div class='stat-number'><span class='counter' data-target='300'>0</span><span class='stat-plus'>+</span></div>
+          <div class='stat-label'>Projects Done</div>
+        </div>
+        <div class='stat-card reveal'>
+          <i class='fas fa-star stat-icon'></i>
+          <div class='stat-number'><span class='counter' data-target='5'>0</span><span class='stat-plus'>★</span></div>
+          <div class='stat-label'>Average Rating</div>
+        </div>
+        <div class='stat-card reveal'>
+          <i class='fas fa-calendar stat-icon'></i>
+          <div class='stat-number'><span class='counter' data-target='4'>0</span><span class='stat-plus'>+</span></div>
+          <div class='stat-label'>Years Experience</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════
+       SECTION 2: ABOUT
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='about'>
+    <div class='container'>
+      <div class='about-grid'>
+        <div class='about-visual reveal-left'>
+          <div class='about-img-container'>
+            <div class='about-img-inner'>
+              <!-- REPLACE src WITH YOUR PHOTO URL -->
+              <!-- <img src='YOUR_PHOTO_URL' alt='Sawon About Photo' /> -->
+              <div class='about-img-placeholder'>
+                <i class='fas fa-id-card'></i>
+                <p>Your About Photo</p>
+              </div>
+            </div>
+            <div class='about-img-deco'></div>
+            <div class='about-exp-badge'>
+              <div class='num'>4+</div>
+              <div class='label'>Years of<br/>Excellence</div>
+            </div>
+          </div>
+        </div>
+        <div class='about-content reveal-right'>
+          <div class='section-label'>About Me</div>
+          <h2 class='section-title'>
+            Turning Ideas Into <span class='highlight'>Digital Success</span>
+          </h2>
+          <p>
+            Hi, I&#39;m <strong style='color:var(--blue-bright)'>Sawon</strong> — a passionate Digital Marketer and Graphic Designer based in Barishal, Bangladesh. With over 4 years of hands-on experience, I help businesses and brands build a powerful digital presence that drives real results.
+          </p>
+          <p>
+            I combine creative design thinking with data-driven marketing strategies to deliver solutions that not only look stunning but also convert visitors into loyal customers. My work spans across SEO, paid advertising, branding, and content — all crafted to elevate your brand.
+          </p>
+          <div class='about-highlights'>
+            <div class='highlight-item'><i class='fas fa-check-circle'></i><span>SEO &amp; Guest Posting Expert</span></div>
+            <div class='highlight-item'><i class='fas fa-check-circle'></i><span>Facebook Ads Certified</span></div>
+            <div class='highlight-item'><i class='fas fa-check-circle'></i><span>Adobe Creative Suite</span></div>
+            <div class='highlight-item'><i class='fas fa-check-circle'></i><span>Brand Identity Design</span></div>
+            <div class='highlight-item'><i class='fas fa-check-circle'></i><span>Top-Rated on Fiverr</span></div>
+            <div class='highlight-item'><i class='fas fa-check-circle'></i><span>International Client Base</span></div>
+          </div>
+          <a class='btn-primary' href='https://www.fiverr.com/sawonhot1' target='_blank' style='width:fit-content;margin-top:1.5rem;'>
+            <i class='fas fa-external-link-alt'></i> View Fiverr Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 3: SERVICES
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='services'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>What I Do</div>
+        <h2 class='section-title'>Premium <span class='highlight'>Services</span></h2>
+        <p class='section-sub'>Comprehensive digital solutions designed to elevate your brand and accelerate your business growth.</p>
+      </div>
+      <div class='services-grid'>
+        <div class='service-card reveal'>
+          <div class='service-num'>01</div>
+          <div class='service-icon-wrap'><i class='fas fa-search'></i></div>
+          <div class='service-title'>SEO &amp; Guest Posting</div>
+          <div class='service-desc'>Build powerful authority with high-quality backlinks and strategic guest posting campaigns on DR 50+ websites to dominate search rankings.</div>
+          <div class='service-tags'>
+            <span class='stag'>Link Building</span>
+            <span class='stag'>DA/DR Boost</span>
+            <span class='stag'>Outreach</span>
+          </div>
+        </div>
+        <div class='service-card reveal'>
+          <div class='service-num'>02</div>
+          <div class='service-icon-wrap'><i class='fab fa-facebook-f'></i></div>
+          <div class='service-title'>Facebook Advertising</div>
+          <div class='service-desc'>ROI-driven Facebook &amp; Instagram ad campaigns with precise targeting, compelling creatives, and conversion-optimized funnels.</div>
+          <div class='service-tags'>
+            <span class='stag'>Lead Gen</span>
+            <span class='stag'>Retargeting</span>
+            <span class='stag'>ROAS Optimization</span>
+          </div>
+        </div>
+        <div class='service-card reveal'>
+          <div class='service-num'>03</div>
+          <div class='service-icon-wrap'><i class='fas fa-palette'></i></div>
+          <div class='service-title'>Graphic Design</div>
+          <div class='service-desc'>Professional visual design for social media, marketing materials, flyers, banners, and digital assets that capture attention and drive engagement.</div>
+          <div class='service-tags'>
+            <span class='stag'>Photoshop</span>
+            <span class='stag'>Illustrator</span>
+            <span class='stag'>Canva Pro</span>
+          </div>
+        </div>
+        <div class='service-card reveal'>
+          <div class='service-num'>04</div>
+          <div class='service-icon-wrap'><i class='fas fa-pen-nib'></i></div>
+          <div class='service-title'>Logo &amp; Brand Identity</div>
+          <div class='service-desc'>Iconic logo design and complete brand identity packages including typography, color systems, brand guidelines, and visual language.</div>
+          <div class='service-tags'>
+            <span class='stag'>Logo Design</span>
+            <span class='stag'>Brand Kit</span>
+            <span class='stag'>Style Guide</span>
+          </div>
+        </div>
+        <div class='service-card reveal'>
+          <div class='service-num'>05</div>
+          <div class='service-icon-wrap'><i class='fas fa-feather-alt'></i></div>
+          <div class='service-title'>Content Writing</div>
+          <div class='service-desc'>SEO-optimized, compelling content for blogs, websites, product descriptions, social media, and email campaigns that engage and convert.</div>
+          <div class='service-tags'>
+            <span class='stag'>Blog Posts</span>
+            <span class='stag'>Copywriting</span>
+            <span class='stag'>SEO Content</span>
+          </div>
+        </div>
+        <div class='service-card reveal'>
+          <div class='service-num'>06</div>
+          <div class='service-icon-wrap'><i class='fas fa-share-alt'></i></div>
+          <div class='service-title'>Social Media Marketing</div>
+          <div class='service-desc'>Full-service social media management, strategy, content creation, and community building to grow your brand presence organically and paid.</div>
+          <div class='service-tags'>
+            <span class='stag'>Strategy</span>
+            <span class='stag'>Content Plan</span>
+            <span class='stag'>Growth</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 4: PORTFOLIO
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='portfolio'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>My Work</div>
+        <h2 class='section-title'>Featured <span class='highlight'>Portfolio</span></h2>
+        <p class='section-sub'>A curated showcase of branding, design, SEO, and digital marketing projects.</p>
+      </div>
+      <div class='portfolio-filters reveal'>
+        <button class='filter-btn active' data-filter='all'>All Work</button>
+        <button class='filter-btn' data-filter='branding'>Branding</button>
+        <button class='filter-btn' data-filter='design'>Design</button>
+        <button class='filter-btn' data-filter='seo'>SEO</button>
+        <button class='filter-btn' data-filter='ads'>Ads</button>
+        <button class='filter-btn' data-filter='social'>Social Media</button>
+      </div>
+      <div class='portfolio-grid' id='portfolio-grid'>
+        <div class='portfolio-item reveal' data-category='branding'>
+          <div class='portfolio-thumb' style='background:linear-gradient(135deg,rgba(14,165,233,0.15),rgba(139,92,246,0.1));'>
+            <i class='fas fa-layer-group'></i>
+          </div>
+          <div class='portfolio-overlay'>
+            <div class='portfolio-cat'>Brand Identity</div>
+            <div class='portfolio-name'>TechVision Brand Kit</div>
+          </div>
+          <div class='portfolio-link'><i class='fas fa-arrow-right'></i></div>
+        </div>
+        <div class='portfolio-item reveal' data-category='design'>
+          <div class='portfolio-thumb' style='background:linear-gradient(135deg,rgba(6,182,212,0.15),rgba(14,165,233,0.08));'>
+            <i class='fas fa-paint-brush'></i>
+          </div>
+          <div class='portfolio-overlay'>
+            <div class='portfolio-cat'>Graphic Design</div>
+            <div class='portfolio-name'>Social Media Package</div>
+          </div>
+          <div class='portfolio-link'><i class='fas fa-arrow-right'></i></div>
+        </div>
+        <div class='portfolio-item reveal' data-category='seo'>
+          <div class='portfolio-thumb' style='background:linear-gradient(135deg,rgba(14,165,233,0.12),rgba(6,182,212,0.08));'>
+            <i class='fas fa-chart-line'></i>
+          </div>
+          <div class='portfolio-overlay'>
+            <div class='portfolio-cat'>SEO Campaign</div>
+            <div class='portfolio-name'>300% Traffic Growth</div>
+          </div>
+          <div class='portfolio-link'><i class='fas fa-arrow-right'></i></div>
+        </div>
+        <div class='portfolio-item reveal' data-category='ads'>
+          <div class='portfolio-thumb' style='background:linear-gradient(135deg,rgba(139,92,246,0.12),rgba(14,165,233,0.08));'>
+            <i class='fab fa-facebook'></i>
+          </div>
+          <div class='portfolio-overlay'>
+            <div class='portfolio-cat'>Facebook Ads</div>
+            <div class='portfolio-name'>eCommerce Sales 5x ROAS</div>
+          </div>
+          <div class='portfolio-link'><i class='fas fa-arrow-right'></i></div>
+        </div>
+        <div class='portfolio-item reveal' data-category='branding'>
+          <div class='portfolio-thumb' style='background:linear-gradient(135deg,rgba(14,165,233,0.1),rgba(139,92,246,0.12));'>
+            <i class='fas fa-pen-nib'></i>
+          </div>
+          <div class='portfolio-overlay'>
+            <div class='portfolio-cat'>Logo Design</div>
+            <div class='portfolio-name'>Startup Logo Series</div>
+          </div>
+          <div class='portfolio-link'><i class='fas fa-arrow-right'></i></div>
+        </div>
+        <div class='portfolio-item reveal' data-category='social'>
+          <div class='portfolio-thumb' style='background:linear-gradient(135deg,rgba(6,182,212,0.12),rgba(14,165,233,0.06));'>
+            <i class='fas fa-share-alt'></i>
+          </div>
+          <div class='portfolio-overlay'>
+            <div class='portfolio-cat'>Social Media</div>
+            <div class='portfolio-name'>Instagram Growth Strategy</div>
+          </div>
+          <div class='portfolio-link'><i class='fas fa-arrow-right'></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 5: FREELANCE PROFILES
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='profiles'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>Find Me On</div>
+        <h2 class='section-title'>Freelance <span class='highlight'>Profiles</span></h2>
+        <p class='section-sub'>Connect with me on top freelance platforms and professional networks.</p>
+      </div>
+      <div class='profiles-grid'>
+        <a class='profile-card reveal' href='https://www.fiverr.com/sawonhot1' style='--card-accent:linear-gradient(90deg,#1dbf73,#19a463);' target='_blank'>
+          <div class='profile-platform-icon' style='--icon-bg:rgba(29,191,115,0.12);color:#1dbf73;'>
+            <i class='fas fa-star'></i>
+          </div>
+          <div class='profile-platform'>Fiverr</div>
+          <div class='profile-handle'>@sawonhot1</div>
+          <div class='profile-action'><i class='fas fa-external-link-alt'></i> View Profile</div>
+        </a>
+        <a class='profile-card reveal' href='https://www.upwork.com/freelancers/sawonhot1' style='--card-accent:linear-gradient(90deg,#14a800,#108500);' target='_blank'>
+          <div class='profile-platform-icon' style='--icon-bg:rgba(20,168,0,0.12);color:#14a800;'>
+            <i class='fas fa-briefcase'></i>
+          </div>
+          <div class='profile-platform'>Upwork</div>
+          <div class='profile-handle'>Sawon</div>
+          <div class='profile-action'><i class='fas fa-external-link-alt'></i> View Profile</div>
+        </a>
+        <a class='profile-card reveal' href='https://www.freelancer.com/u/sawonhot1' style='--card-accent:linear-gradient(90deg,#29b2fe,#0077cc);' target='_blank'>
+          <div class='profile-platform-icon' style='--icon-bg:rgba(41,178,254,0.12);color:#29b2fe;'>
+            <i class='fas fa-globe'></i>
+          </div>
+          <div class='profile-platform'>Freelancer</div>
+          <div class='profile-handle'>@sawonhot1</div>
+          <div class='profile-action'><i class='fas fa-external-link-alt'></i> View Profile</div>
+        </a>
+        <a class='profile-card reveal' href='https://www.linkedin.com/in/sawonhot1' style='--card-accent:linear-gradient(90deg,#0077b5,#005582);' target='_blank'>
+          <div class='profile-platform-icon' style='--icon-bg:rgba(0,119,181,0.12);color:#0077b5;'>
+            <i class='fab fa-linkedin-in'></i>
+          </div>
+          <div class='profile-platform'>LinkedIn</div>
+          <div class='profile-handle'>Sawonhot1</div>
+          <div class='profile-action'><i class='fas fa-external-link-alt'></i> Connect</div>
+        </a>
+        <a class='profile-card reveal' href='https://www.behance.net/sawonhot1' style='--card-accent:linear-gradient(90deg,#0057ff,#0040b3);' target='_blank'>
+          <div class='profile-platform-icon' style='--icon-bg:rgba(0,87,255,0.12);color:#0057ff;'>
+            <i class='fab fa-behance'></i>
+          </div>
+          <div class='profile-platform'>Behance</div>
+          <div class='profile-handle'>Sawonhot1</div>
+          <div class='profile-action'><i class='fas fa-external-link-alt'></i> View Portfolio</div>
+        </a>
+        <a class='profile-card reveal' href='https://dribbble.com/sawonhot1' style='--card-accent:linear-gradient(90deg,#ea4c89,#c73872);' target='_blank'>
+          <div class='profile-platform-icon' style='--icon-bg:rgba(234,76,137,0.12);color:#ea4c89;'>
+            <i class='fab fa-dribbble'></i>
+          </div>
+          <div class='profile-platform'>Dribbble</div>
+          <div class='profile-handle'>Sawonhot1</div>
+          <div class='profile-action'><i class='fas fa-external-link-alt'></i> View Shots</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 6: SKILLS
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='skills'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>Expertise</div>
+        <h2 class='section-title'>Skills &amp; <span class='highlight'>Proficiency</span></h2>
+        <p class='section-sub'>Years of dedicated practice across design and digital marketing disciplines.</p>
+      </div>
+      <div class='skills-layout'>
+        <div class='skills-intro reveal-left'>
+          <p>I bring a rare combination of left-brain strategy and right-brain creativity. Whether it&#39;s architecting an SEO campaign or designing a pixel-perfect brand identity, I approach every project with precision and passion.</p>
+          <p>My toolkit spans from Adobe Creative Suite and industry SEO platforms to Facebook Business Manager and advanced analytics dashboards.</p>
+          <div class='tools-grid'>
+            <div class='tool-tag'><i class='fab fa-adobe'></i> Photoshop</div>
+            <div class='tool-tag'><i class='fab fa-adobe'></i> Illustrator</div>
+            <div class='tool-tag'><i class='fab fa-figma'></i> Figma</div>
+            <div class='tool-tag'><i class='fab fa-facebook'></i> Ads Manager</div>
+            <div class='tool-tag'><i class='fas fa-search'></i> Ahrefs</div>
+            <div class='tool-tag'><i class='fas fa-chart-bar'></i> Semrush</div>
+            <div class='tool-tag'><i class='fab fa-google'></i> Analytics</div>
+            <div class='tool-tag'><i class='fas fa-envelope'></i> Mailchimp</div>
+            <div class='tool-tag'><i class='fab fa-wordpress'></i> WordPress</div>
+          </div>
+        </div>
+        <div class='skill-bars reveal-right' id='skill-bars'>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>SEO &amp; Link Building</span>
+              <span class='skill-pct'>93%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='93'></div></div>
+          </div>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>Facebook Advertising</span>
+              <span class='skill-pct'>90%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='90'></div></div>
+          </div>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>Adobe Photoshop</span>
+              <span class='skill-pct'>88%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='88'></div></div>
+          </div>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>Adobe Illustrator</span>
+              <span class='skill-pct'>85%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='85'></div></div>
+          </div>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>Brand &amp; Logo Design</span>
+              <span class='skill-pct'>92%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='92'></div></div>
+          </div>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>Content Writing</span>
+              <span class='skill-pct'>87%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='87'></div></div>
+          </div>
+          <div class='skill-bar-item'>
+            <div class='skill-bar-header'>
+              <span class='skill-name'>Social Media Marketing</span>
+              <span class='skill-pct'>91%</span>
+            </div>
+            <div class='skill-track'><div class='skill-fill' data-pct='91'></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 7: TESTIMONIALS
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='testimonials'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>Client Reviews</div>
+        <h2 class='section-title'>What Clients <span class='highlight'>Say</span></h2>
+        <p class='section-sub'>Real feedback from real clients across Fiverr, Upwork, and direct engagements.</p>
+      </div>
+      <div class='testimonials-wrapper'>
+        <div class='testimonials-slider'>
+          <div class='testimonials-track' id='testi-track'>
+            <div class='testi-card'>
+              <div class='testi-quote'>&#x201C;</div>
+              <p class='testi-text'>Sawon delivered an exceptional brand identity package for our startup. The logo and visual system exceeded all expectations. Professional, creative, and delivered ahead of schedule. Highly recommended!</p>
+              <div class='testi-author'>
+                <div class='testi-avatar'>JR</div>
+                <div>
+                  <div class='testi-name'>James Richardson</div>
+                  <div class='testi-role'>CEO, TechVision Inc. — USA</div>
+                  <div class='testi-stars'>★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div class='testi-card'>
+              <div class='testi-quote'>&#x201C;</div>
+              <p class='testi-text'>The Facebook ad campaign Sawon created for us generated a 6x ROAS in the first month. Incredible targeting strategy and creative assets. Will definitely hire again for our next campaign.</p>
+              <div class='testi-author'>
+                <div class='testi-avatar'>SM</div>
+                <div>
+                  <div class='testi-name'>Sarah Mitchell</div>
+                  <div class='testi-role'>eCommerce Owner — UK</div>
+                  <div class='testi-stars'>★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div class='testi-card'>
+              <div class='testi-quote'>&#x201C;</div>
+              <p class='testi-text'>Amazing SEO work! Sawon built 50+ high-quality backlinks that boosted our domain authority significantly. Our organic traffic tripled within 3 months. Excellent communication throughout.</p>
+              <div class='testi-author'>
+                <div class='testi-avatar'>KL</div>
+                <div>
+                  <div class='testi-name'>Kevin Liu</div>
+                  <div class='testi-role'>Digital Agency — Canada</div>
+                  <div class='testi-stars'>★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div class='testi-card'>
+              <div class='testi-quote'>&#x201C;</div>
+              <p class='testi-text'>Sawon&#39;s content writing is top-notch. Every piece was well-researched, SEO-optimized, and written in a compelling voice. Our blog engagement increased by 180% after working with him.</p>
+              <div class='testi-author'>
+                <div class='testi-avatar'>AP</div>
+                <div>
+                  <div class='testi-name'>Alex Parker</div>
+                  <div class='testi-role'>Marketing Manager — Australia</div>
+                  <div class='testi-stars'>★★★★★</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='testi-nav'>
+          <button class='testi-btn' id='testi-prev'><i class='fas fa-chevron-left'></i></button>
+          <div class='testi-dots' id='testi-dots'></div>
+          <button class='testi-btn' id='testi-next'><i class='fas fa-chevron-right'></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 8: BLOG
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='blog'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>Latest Articles</div>
+        <h2 class='section-title'>From the <span class='highlight'>Blog</span></h2>
+        <p class='section-sub'>Insights, tutorials, and strategies on digital marketing, SEO, and graphic design.</p>
+      </div>
+
+      <!-- Blogger Post Feed - auto loads from your posts -->
+      <div id='blog-feed-container'>
+        <div class='blog-grid' id='dynamic-blog-grid'>
+          <!-- Dynamic posts will appear here via Blogger feed API -->
+        </div>
+      </div>
+
+      <!-- Fallback static blog cards (shown if no posts exist yet) -->
+      <div class='blog-grid' id='static-blog-grid'>
+        <div class='blog-card reveal'>
+          <div class='blog-thumb'><div class='blog-thumb-placeholder'><i class='fas fa-chart-line'></i></div></div>
+          <div class='blog-body'>
+            <div class='blog-meta'><span class='blog-cat'>SEO</span><span>5 min read</span></div>
+            <div class='blog-title'>Top 10 SEO Link Building Strategies That Actually Work in 2025</div>
+            <div class='blog-excerpt'>Discover the most effective white-hat link building techniques to boost your domain authority and organic rankings.</div>
+            <div class='blog-read-more'>Read Article <i class='fas fa-arrow-right'></i></div>
+          </div>
+        </div>
+        <div class='blog-card reveal'>
+          <div class='blog-thumb'><div class='blog-thumb-placeholder'><i class='fab fa-facebook'></i></div></div>
+          <div class='blog-body'>
+            <div class='blog-meta'><span class='blog-cat'>Facebook Ads</span><span>7 min read</span></div>
+            <div class='blog-title'>How to Create Facebook Ads That Convert: A Complete Guide</div>
+            <div class='blog-excerpt'>Master the art of Facebook advertising with audience targeting, creative best practices and budget optimization.</div>
+            <div class='blog-read-more'>Read Article <i class='fas fa-arrow-right'></i></div>
+          </div>
+        </div>
+        <div class='blog-card reveal'>
+          <div class='blog-thumb'><div class='blog-thumb-placeholder'><i class='fas fa-paint-brush'></i></div></div>
+          <div class='blog-body'>
+            <div class='blog-meta'><span class='blog-cat'>Design</span><span>6 min read</span></div>
+            <div class='blog-title'>Logo Design Principles Every Brand Owner Needs to Know</div>
+            <div class='blog-excerpt'>Understanding the fundamentals of logo design that make brands instantly recognizable and memorable worldwide.</div>
+            <div class='blog-read-more'>Read Article <i class='fas fa-arrow-right'></i></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hidden: Blogger native widget output -->
+      <b:section class='main' id='blog-posts-widget-section' maxwidgets='1' showaddelement='yes'>
+        <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog'>
+          <b:widget-settings>
+            <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+            <b:widget-setting name='showCommentCount'>false</b:widget-setting>
+            <b:widget-setting name='showAuthor'>false</b:widget-setting>
+          </b:widget-settings>
+          <b:includable id='main' var='top'>
+            <b:loop values='data:posts' var='post'>
+              <b:if cond='data:post.isFirstPost'>
+                <script>
+                //<![CDATA[
+                  if(document.getElementById('dynamic-blog-grid')) {
+                    document.getElementById('static-blog-grid').style.display='none';
+                  }
+                //]]>
+                </script>
+              </b:if>
+            </b:loop>
+          </b:includable>
+        </b:widget>
+      </b:section>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       SECTION 9: CONTACT
+  ══════════════════════════════════ -->
+  <section class='section-pad' id='contact'>
+    <div class='container'>
+      <div class='section-header'>
+        <div class='section-label'>Get In Touch</div>
+        <h2 class='section-title'>Let&#39;s Work <span class='highlight'>Together</span></h2>
+        <p class='section-sub'>Ready to elevate your brand? Reach out and let&#39;s discuss your project.</p>
+      </div>
+      <div class='contact-layout'>
+        <div class='contact-info-stack reveal-left'>
+          <div class='contact-card'>
+            <div class='contact-card-icon'><i class='fas fa-envelope'></i></div>
+            <div>
+              <div class='contact-card-label'>Email</div>
+              <div class='contact-card-value'>
+                <a href='mailto:sawon01934355838@gmail.com'>sawon01934355838@gmail.com</a><br/>
+                <a href='mailto:sawonhot1@gmail.com'>sawonhot1@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <div class='contact-card'>
+            <div class='contact-card-icon' style='background:linear-gradient(135deg,#128c7e,#25d366);'><i class='fab fa-whatsapp'></i></div>
+            <div>
+              <div class='contact-card-label'>WhatsApp</div>
+              <div class='contact-card-value'>
+                <a href='https://wa.me/8801703808700' target='_blank'>+880 1703 808700</a>
+              </div>
+            </div>
+          </div>
+          <div class='contact-card'>
+            <div class='contact-card-icon' style='background:linear-gradient(135deg,#f59e0b,#d97706);'><i class='fas fa-map-marker-alt'></i></div>
+            <div>
+              <div class='contact-card-label'>Location</div>
+              <div class='contact-card-value'>Barishal, Bangladesh<br/><span style='color:var(--text-muted);font-size:0.82rem;'>Available Worldwide · Remote</span></div>
+            </div>
+          </div>
+          <div class='contact-card'>
+            <div class='contact-card-icon' style='background:linear-gradient(135deg,var(--blue-deep),var(--blue-primary));'><i class='fas fa-globe'></i></div>
+            <div>
+              <div class='contact-card-label'>Website / Portfolio Hub</div>
+              <div class='contact-card-value'>
+                <a href='https://sites.google.com/view/design-and-digital-hub/home' target='_blank'>Design &amp; Digital Hub</a><br/>
+                <a href='https://www.fiverr.com/sawonhot1' target='_blank'>Fiverr: sawonhot1</a>
+              </div>
+            </div>
+          </div>
+          <div class='contact-card'>
+            <div class='contact-card-icon' style='background:linear-gradient(135deg,#8b5cf6,#6d28d9);'><i class='fas fa-share-alt'></i></div>
+            <div>
+              <div class='contact-card-label'>Social Media</div>
+              <div class='contact-card-value' style='display:flex;flex-wrap:wrap;gap:8px;margin-top:4px;'>
+                <a href='https://www.facebook.com/designanddigitalhubbd' target='_blank' style='background:rgba(14,165,233,0.08);padding:4px 10px;border-radius:50px;font-size:0.78rem;'><i class='fab fa-facebook-f'></i> Facebook</a>
+                <a href='https://www.instagram.com/sawonak47' target='_blank' style='background:rgba(14,165,233,0.08);padding:4px 10px;border-radius:50px;font-size:0.78rem;'><i class='fab fa-instagram'></i> Instagram</a>
+                <a href='https://www.youtube.com/@DesignandDigitalHub' target='_blank' style='background:rgba(14,165,233,0.08);padding:4px 10px;border-radius:50px;font-size:0.78rem;'><i class='fab fa-youtube'></i> YouTube</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='contact-form-wrap reveal-right'>
+          <div class='form-title'>Send a Message ✉️</div>
+          <form id='contact-form' onsubmit='handleSubmit(event)'>
+            <div class='form-row'>
+              <div class='form-group'>
+                <label>Your Name *</label>
+                <input class='form-input' id='cf-name' placeholder='John Smith' required='required' type='text'/>
+              </div>
+              <div class='form-group'>
+                <label>Email Address *</label>
+                <input class='form-input' id='cf-email' placeholder='john@company.com' required='required' type='email'/>
+              </div>
+            </div>
+            <div class='form-group'>
+              <label>Service Interested In</label>
+              <select class='form-select' id='cf-service'>
+                <option value=''>Select a service...</option>
+                <option>SEO &amp; Guest Posting</option>
+                <option>Facebook Advertising</option>
+                <option>Graphic Design</option>
+                <option>Logo &amp; Brand Identity</option>
+                <option>Content Writing</option>
+                <option>Social Media Marketing</option>
+                <option>Full Digital Package</option>
+              </select>
+            </div>
+            <div class='form-group'>
+              <label>Budget Range</label>
+              <select class='form-select' id='cf-budget'>
+                <option value=''>Select budget...</option>
+                <option>$50 – $100</option>
+                <option>$100 – $500</option>
+                <option>$500 – $1000</option>
+                <option>$1000 – $5000</option>
+                <option>$5000+</option>
+              </select>
+            </div>
+            <div class='form-group'>
+              <label>Your Message *</label>
+              <textarea class='form-textarea' id='cf-message' placeholder='Tell me about your project, goals, and timeline...' required='required'></textarea>
+            </div>
+            <button class='btn-submit' type='submit'>
+              <i class='fas fa-paper-plane'></i> Send Message
+            </button>
+            <p class='form-note'>⚡ Typically responds within 2-4 hours</p>
+          </form>
+          <div id='form-success' style='display:none;text-align:center;padding:2rem;'>
+            <i class='fas fa-check-circle' style='font-size:3rem;color:var(--blue-neon);margin-bottom:1rem;display:block;'></i>
+            <h3 style='font-family:var(--font-heading);margin-bottom:0.5rem;'>Message Sent!</h3>
+            <p style='color:var(--text-secondary);font-size:0.9rem;'>Thank you! I&#39;ll get back to you within 2-4 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHATSAPP BUTTON ── -->
+  <a href='https://wa.me/8801703808700' id='wa-float' target='_blank' title='Chat on WhatsApp'>
+    <div class='wa-pulse'></div>
+    <i class='fab fa-whatsapp'></i>
+  </a>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer id='footer'>
+    <div class='container'>
+      <div class='footer-grid'>
+        <div>
+          <div class='footer-brand-name'>SAWON.</div>
+          <p class='footer-tagline'>
+            Digital Marketer &amp; Graphic Designer from Bangladesh, helping global brands grow with creative strategy and stunning design.
+          </p>
+          <div class='footer-socials'>
+            <a class='footer-social' href='https://www.facebook.com/designanddigitalhubbd' target='_blank' title='Facebook'><i class='fab fa-facebook-f'></i></a>
+            <a class='footer-social' href='https://www.instagram.com/sawonak47' target='_blank' title='Instagram'><i class='fab fa-instagram'></i></a>
+            <a class='footer-social' href='https://www.linkedin.com/in/sawonhot1' target='_blank' title='LinkedIn'><i class='fab fa-linkedin-in'></i></a>
+            <a class='footer-social' href='https://www.behance.net/sawonhot1' target='_blank' title='Behance'><i class='fab fa-behance'></i></a>
+            <a class='footer-social' href='https://dribbble.com/sawonhot1' target='_blank' title='Dribbble'><i class='fab fa-dribbble'></i></a>
+            <a class='footer-social' href='https://www.youtube.com/@DesignandDigitalHub' target='_blank' title='YouTube'><i class='fab fa-youtube'></i></a>
+            <a class='footer-social' href='https://www.fiverr.com/sawonhot1' target='_blank' title='Fiverr'><i class='fas fa-star'></i></a>
+          </div>
+        </div>
+        <div>
+          <div class='footer-col-title'>Quick Links</div>
+          <ul class='footer-links'>
+            <li><a href='#about'>About Me</a></li>
+            <li><a href='#services'>Services</a></li>
+            <li><a href='#portfolio'>Portfolio</a></li>
+            <li><a href='#skills'>Skills</a></li>
+            <li><a href='#testimonials'>Reviews</a></li>
+            <li><a href='#blog'>Blog</a></li>
+            <li><a href='#contact'>Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class='footer-col-title'>Services</div>
+          <ul class='footer-links'>
+            <li><a href='#services'>SEO &amp; Backlinks</a></li>
+            <li><a href='#services'>Guest Posting</a></li>
+            <li><a href='#services'>Facebook Ads</a></li>
+            <li><a href='#services'>Logo Design</a></li>
+            <li><a href='#services'>Graphic Design</a></li>
+            <li><a href='#services'>Content Writing</a></li>
+            <li><a href='#services'>Social Media</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class='footer-bottom'>
+        <div class='footer-copy'>
+          &#xA9; <span id='year'></span> <strong>Sawon</strong> — All rights reserved. |
+          <a href='https://sites.google.com/view/design-and-digital-hub/home' target='_blank'>Design &amp; Digital Hub</a>
+        </div>
+        <div class='footer-made'>
+          Made with <span>♥</span> in Bangladesh for the World
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════ -->
+  <script>
+  //<![CDATA[
+  // ── LOADER ──
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('loader').classList.add('hide');
+    }, 2200);
+  });
+
+  // ── CUSTOM CURSOR ──
+  const dot = document.getElementById('cursor-dot');
+  const ring = document.getElementById('cursor-ring');
+  let mouseX=0, mouseY=0, ringX=0, ringY=0;
+  document.addEventListener('mousemove', e => {
+    mouseX = e.clientX; mouseY = e.clientY;
+    dot.style.left = mouseX + 'px';
+    dot.style.top = mouseY + 'px';
+  });
+  (function animRing(){
+    ringX += (mouseX - ringX) * 0.14;
+    ringY += (mouseY - ringY) * 0.14;
+    ring.style.left = ringX + 'px';
+    ring.style.top = ringY + 'px';
+    requestAnimationFrame(animRing);
+  })();
+  document.querySelectorAll('a, button, .service-card, .portfolio-item, .profile-card').forEach(el => {
+    el.addEventListener('mouseenter', () => {
+      ring.style.width = '56px'; ring.style.height = '56px';
+      ring.style.borderColor = 'rgba(14,165,233,0.9)';
+      dot.style.transform = 'translate(-50%,-50%) scale(1.5)';
+    });
+    el.addEventListener('mouseleave', () => {
+      ring.style.width = '36px'; ring.style.height = '36px';
+      ring.style.borderColor = 'rgba(14,165,233,0.6)';
+      dot.style.transform = 'translate(-50%,-50%) scale(1)';
+    });
+  });
+
+  // ── SCROLL PROGRESS ──
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.body.scrollHeight - window.innerHeight;
+    document.getElementById('scroll-progress').style.width = (scrollTop / docHeight * 100) + '%';
+  });
+
+  // ── NAVBAR SCROLL ──
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 60) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // ── MOBILE NAV ──
+  const hamburger = document.getElementById('hamburger');
+  const mobileNav = document.getElementById('mobile-nav');
+  hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+  });
+  function closeMobileNav() { mobileNav.classList.remove('open'); }
+
+  // ── DARK/LIGHT THEME ──
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('theme-icon');
+  let isDark = true;
+  themeToggle.addEventListener('click', () => {
+    isDark = !isDark;
+    document.documentElement.setAttribute('data-theme', isDark ? 'dark' : 'light');
+    themeIcon.className = isDark ? 'fas fa-moon' : 'fas fa-sun';
+  });
+
+  // ── PARTICLES ──
+  const canvas = document.getElementById('particles-canvas');
+  const ctx = canvas.getContext('2d');
+  let particles = [];
+  function resizeCanvas() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+  class Particle {
+    constructor() { this.reset(); }
+    reset() {
+      this.x = Math.random() * canvas.width;
+      this.y = Math.random() * canvas.height;
+      this.size = Math.random() * 1.5 + 0.3;
+      this.speedX = (Math.random() - 0.5) * 0.4;
+      this.speedY = (Math.random() - 0.5) * 0.4;
+      this.opacity = Math.random() * 0.5 + 0.1;
+      this.color = Math.random() > 0.7 ? '139,92,246' : '14,165,233';
+    }
+    update() {
+      this.x += this.speedX; this.y += this.speedY;
+      if (this.x < 0 || this.x > canvas.width || this.y < 0 || this.y > canvas.height) this.reset();
+    }
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${this.color},${this.opacity})`;
+      ctx.fill();
+    }
+  }
+  for (let i = 0; i < 120; i++) particles.push(new Particle());
+  function animParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => { p.update(); p.draw(); });
+    // Draw connections
+    particles.forEach((p1, i) => {
+      particles.slice(i+1).forEach(p2 => {
+        const dx = p1.x - p2.x, dy = p1.y - p2.y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        if (dist < 100) {
+          ctx.beginPath();
+          ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = `rgba(14,165,233,${0.08 * (1 - dist/100)})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      });
+    });
+    requestAnimationFrame(animParticles);
+  }
+  animParticles();
+
+  // ── TYPING ANIMATION ──
+  const phrases = [
+    'Digital Marketer.',
+    'Graphic Designer.',
+    'SEO Specialist.',
+    'Brand Strategist.',
+    'Facebook Ads Expert.',
+    'Creative Problem Solver.'
+  ];
+  let phraseIdx = 0, charIdx = 0, deleting = false;
+  const typedEl = document.getElementById('typed-text');
+  function typeEffect() {
+    const phrase = phrases[phraseIdx];
+    if (!deleting) {
+      typedEl.textContent = phrase.slice(0, ++charIdx);
+      if (charIdx === phrase.length) { deleting = true; setTimeout(typeEffect, 2000); return; }
+    } else {
+      typedEl.textContent = phrase.slice(0, --charIdx);
+      if (charIdx === 0) { deleting = false; phraseIdx = (phraseIdx + 1) % phrases.length; }
+    }
+    setTimeout(typeEffect, deleting ? 55 : 100);
+  }
+  typeEffect();
+
+  // ── SCROLL REVEAL ──
+  const revealObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => revealObs.observe(el));
+
+  // ── ANIMATED COUNTERS ──
+  function animCounter(el) {
+    const target = +el.getAttribute('data-target');
+    const duration = 2000;
+    const step = target / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = Math.floor(current);
+      if (current >= target) clearInterval(timer);
+    }, 16);
+  }
+  const counterObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.counter').forEach(animCounter);
+        counterObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('#stats').forEach(s => counterObs.observe(s));
+
+  // ── SKILL BARS ──
+  const skillObs = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.skill-fill').forEach(fill => {
+          const pct = fill.getAttribute('data-pct');
+          setTimeout(() => { fill.style.width = pct + '%'; }, 200);
+        });
+        skillObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  const skillSection = document.getElementById('skill-bars');
+  if (skillSection) skillObs.observe(skillSection);
+
+  // ── PORTFOLIO FILTER ──
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      document.querySelectorAll('.portfolio-item').forEach(item => {
+        const cat = item.getAttribute('data-category');
+        if (filter === 'all' || cat === filter) {
+          item.style.opacity = '1'; item.style.transform = 'scale(1)';
+          item.style.pointerEvents = 'auto';
+        } else {
+          item.style.opacity = '0.25'; item.style.transform = 'scale(0.95)';
+          item.style.pointerEvents = 'none';
+        }
+      });
+    });
+  });
+
+  // ── TESTIMONIAL SLIDER ──
+  const track = document.getElementById('testi-track');
+  const cards = track.querySelectorAll('.testi-card');
+  const dotsContainer = document.getElementById('testi-dots');
+  let currentSlide = 0;
+  const slidesPerView = window.innerWidth > 768 ? 2 : 1;
+  const totalSlides = Math.ceil(cards.length / slidesPerView);
+  // Build dots
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'testi-dot' + (i === 0 ? ' active' : '');
+    dot.addEventListener('click', () => goSlide(i));
+    dotsContainer.appendChild(dot);
+  }
+  function goSlide(n) {
+    currentSlide = (n + totalSlides) % totalSlides;
+    const pct = currentSlide * (100 / slidesPerView);
+    track.style.transform = `translateX(-${pct}%)`;
+    dotsContainer.querySelectorAll('.testi-dot').forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+  }
+  document.getElementById('testi-prev').addEventListener('click', () => goSlide(currentSlide - 1));
+  document.getElementById('testi-next').addEventListener('click', () => goSlide(currentSlide + 1));
+  setInterval(() => goSlide(currentSlide + 1), 5000);
+
+  // ── CONTACT FORM ──
+  function handleSubmit(e) {
+    e.preventDefault();
+    const name = document.getElementById('cf-name').value;
+    const email = document.getElementById('cf-email').value;
+    const service = document.getElementById('cf-service').value;
+    const budget = document.getElementById('cf-budget').value;
+    const message = document.getElementById('cf-message').value;
+    const subject = encodeURIComponent(`Project Inquiry from ${name} - ${service}`);
+    const body = encodeURIComponent(`Hi Sawon,\n\nName: ${name}\nEmail: ${email}\nService: ${service}\nBudget: ${budget}\n\nMessage:\n${message}\n\n---\nSent from Portfolio Website`);
+    const mailtoLink = `mailto:sawon01934355838@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
+    document.getElementById('contact-form').style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+    setTimeout(() => {
+      document.getElementById('contact-form').style.display = 'block';
+      document.getElementById('form-success').style.display = 'none';
+      document.getElementById('contact-form').reset();
+    }, 5000);
+  }
+
+  // ── FOOTER YEAR ──
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // ── BLOGGER POST FEED ──
+  // Fetches your Blogger posts and displays in portfolio style
+  // Replace 'YOUR-BLOG-NAME' with your actual blogspot URL
+  function loadBlogPosts() {
+    const blogUrl = window.location.hostname.includes('localhost') ? null : window.location.hostname;
+    if (!blogUrl || blogUrl === 'localhost') return;
+    const feedUrl = `https://${blogUrl}/feeds/posts/default?alt=json&max-results=3`;
+    fetch(feedUrl)
+      .then(r => r.json())
+      .then(data => {
+        const entries = data.feed.entry;
+        if (!entries || entries.length === 0) return;
+        const grid = document.getElementById('dynamic-blog-grid');
+        document.getElementById('static-blog-grid').style.display = 'none';
+        grid.className = 'blog-grid';
+        entries.forEach(entry => {
+          const title = entry.title.$t;
+          const link = entry.link.find(l => l.rel === 'alternate')?.href || '#';
+          const summary = entry.summary?.$t?.replace(/<[^>]+>/g, '').slice(0,120) + '...' || '';
+          const published = new Date(entry.published.$t).toLocaleDateString('en-US', {month:'short',day:'numeric',year:'numeric'});
+          const imgMatch = entry.content?.$t?.match(/src="([^"]+)"/);
+          const img = imgMatch ? `<img src="${imgMatch[1]}" alt="${title}" loading="lazy"/>` : `<div class="blog-thumb-placeholder"><i class="fas fa-pen-nib"></i></div>`;
+          const card = document.createElement('div');
+          card.className = 'blog-card reveal';
+          card.innerHTML = `
+            <div class="blog-thumb">${img}</div>
+            <div class="blog-body">
+              <div class="blog-meta"><span class="blog-cat">Article</span><span>${published}</span></div>
+              <div class="blog-title">${title}</div>
+              <div class="blog-excerpt">${summary}</div>
+              <a href="${link}" class="blog-read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+            </div>`;
+          grid.appendChild(card);
+          revealObs.observe(card);
+        });
+      })
+      .catch(() => {}); // Silently fail - static fallback remains
+  }
+  loadBlogPosts();
+
+  // ── HERO COUNTER MINI ──
+  const miniCounter = document.querySelector('.hero-stats-float .stat-num');
+  if (miniCounter) {
+    const target = +miniCounter.getAttribute('data-target') || 150;
+    let c = 0;
+    const t = setInterval(() => {
+      c = Math.min(c + 3, target);
+      miniCounter.textContent = c + '+';
+      if (c >= target) clearInterval(t);
+    }, 30);
+  }
+
+  // ── SMOOTH SCROLL ──
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const id = a.getAttribute('href');
+      const target = document.querySelector(id);
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
+  //]]>
+  </script>
+
+</body>
+</html>
